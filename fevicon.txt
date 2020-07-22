@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+<head>
+<title>first webpage</title>
+<link rel="icon" href="icon.png" style="image/png" sizes="16*16">
+</head>
+<body>
+<h1>this is my first webpage. Adding fevicon here</h1>
+</body>
+</html>
