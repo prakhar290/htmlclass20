@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body
+{
+margin:20px;
+background-color:powderblue;
+}
+p
+{
+border:2px dashed blue;
+font-size:25px;
+color:white;
+background-color:brown;
+text-align:justify;
+padding:15px;
+}
+</style>
+<script>
+function myfunction()
+{
+document.getElementById("demo").innerHTML="this is a changed paragraph after clicking on the button.";
+}
+</script>
+<title>using script tag of javascript</title>
+</head>
+<body>
+<p id="demo">this paragraph is going to be changed after clciking on the button.</p><br>
+<button type="button" onclick="myfunction()">click this button to change paragraph</button>
+</body>
+</html> 
