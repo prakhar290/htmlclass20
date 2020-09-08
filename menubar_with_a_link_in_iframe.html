@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<style>
+ul
+ {
+  list-style-type:none;
+  margin:0;
+  padding:5px;
+  overflow:hidden;
+  background-color:black;
+ }
+li
+ {
+  float:left;
+ }
+li a {
+  display:block;
+  color:white;
+  text-align:center;
+  padding:13px;
+  text-decoration:none;
+ }
+li a:hover {
+  background-color:green;
+ }
+</style>
+<title>menu with a iframe</title>
+</head>
+<body>
+  <ul>
+   <li><a href="https://www.google.co.in/">google</a></li>
+   <li><a href="https://github.com/prakhar290">github</a></li>
+   <li><a href="https://www.hackerrank.com/prakhar292000">hackerrank</a></li>
+  </ul>
+   <br><br><iframe src="iframe.htm" style="border:none; margin:15px 150px 0px 150px;" name="frame" height="600px" width="1200px"></iframe>
+   <p><a href="using_base_tag.html" target="frame">click here</a></p>
+</body>
+</html>
