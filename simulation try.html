@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>programing</title>
+
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 	  <style>
+ 	  	.topnav {
+  overflow: hidden;
+  background-color: green;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: skyblue;
+  color: black;}
+
+ 	  .container{
+ 	  	width: 90%;
+ 	  	overflow: hidden;
+ 	  	padding: 20px;
+
+ 	  }
+ 	  .container ul
+ 	  {
+ 	  	margin: 20px;
+ 	  	padding: 0px;
+ 	  }
+ 	  .container ul li{
+ 	  	list-style: none;
+ 	  	float: left;
+ 	  	width: 600px;
+ 	  	height: 400px;
+ 	  	background-color: white;
+ 	  	margin: 10px 10px 0px 10px;
+ 	  	box-sizing: border-box;
+ 	  	border: 2px solid green;
+ 	  }
+.container ul li :hover
+{
+	opacity: 0.9;
+
+}
+.container ul li .title:hover{
+	background-color: blue;
+	color: white;
+
+}
+.container ul li .title{	width:100%;
+	height: 50px;
+	line-height: 50px;
+	background: white;
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid green;
+}
+@media screen and (max-width: 1250px)
+{
+	.container ul li{
+		width: 140%;
+		margin-left: 150px;
+
+	}
+}
+
+
+@media screen and (max-width: 750px)
+{
+	.container ul li{
+		width: 100%;
+		padding: 0px;
+	}
+	.container ul li {
+		float: none;
+		width: 150%
+		margin: 100px auto;
+	}
+
+}
+.scroll {
+overflow-y:scroll;
+height:300px;
+margin:10px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+
+		<h1 style="text-align:center"  >Bubble Sort</h1>
+		<div class="topnav">
+ 			  <a href="contact.html">Contact</a>
+ 			 <a class="active" href="index.html">Home</a>
+</div>
+</div>
+<div class="container">
+	<ul>
+		<li><div class="title" style="background-color: green ;color: white">Problem ?</div>
+         <p style="font-size:20px; margin:65px; text-align:justify;">
+           <b>1.</b> We have to take the size and elements of the array by user which is given in the initialize block
+               after that sort the numbers using bubble sorting?<br>
+           <b>2.</b> Count the total number of iteration occurs while doing the bubble sorting.<br>
+           <b>3.</b> We will get to know what is the time complexity of the sorted array.<br></p>
+              </li>
+		<li><div class="title" style="background-color: green;color: white">Initialize</div>
+                <br><br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input id="demo1" type="text">
+                &nbsp &nbspenter value of a<br><br><br>
+                <br><br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input id="demo2" type="text">
+                &nbsp &nbsp enter the value of b<br><br><br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<button onclick="myFunction()">add</button>
+                 <input id="ans">
+                
+</li>
+<script>
+function myFunction()
+{
+var a;
+var b;
+var sum;
+a = Number(document.getElementById("demo1").value);
+b = Number(document.getElementById("demo2").value);
+sum = a+b;
+document.getElementById("ans").value=sum;
+}
+</script>
+
+
+		<li><div class="title" style="background-color: green;color: white">Step Execution ?</div>
+              
+      <p style="font-size:20px; margin:20px; text-align:justify;">
+        <div class="scroll">
+   int main(){<br>
+
+   int count, temp, i, j, number[30], itrn=0;<br>
+
+   printf("How many numbers do you want to create a array with(max limit is 30): ");<br>
+   scanf("%d",&count);<br>
+
+   printf("Enter %d numbers: ",count);<br>
+
+   for(i=1;i<=count;i++)<br>
+   scanf("%d",&number[i]);<br>
+
+   /* This is the main logic of bubble sort algorithm 
+    */<br>
+   for(i=count-3;i>=1;i--){<br>
+      for(j=0;j<=i;j++){<br>
+        if(number[j]>number[j+1]){<br>
+           temp=number[j];<br>
+           number[j]=number[j+1];<br>
+           number[j+1]=temp;<br>
+        }<br>
+      }<br>
+  printf("array after iteration- %d - is:", ++itrn);<br>
+   for (int k=1;k<=count;k++)<br>
+   printf("%d", number[k]);<br>
+    printf("\n");<br>
+   
+   }<br>
+   
+printf("\n the total number of iterations occur is: %d", itrn);<br>
+printf("\n");<br>
+   if(itrn==count*count)<br>
+  printf("\n worst case");<br>
+  else if(itrn==count)<br>
+     printf("\n best case");<br>
+     else  <br>
+      printf("\n average case");<br>
+printf("\n");<br>
+   printf("Sorted elements: ");<br>
+   for(i=1;i<=count;i++)<br>
+      printf(" %d",number[i]);<br>
+
+   return 0;<br>
+}
+</div>  
+</p>              
+
+</li>
+		<li><div class="title" style="background-color: green;color: white">Graph Visualization </div>
+ <img src="graph.png" alt="graph" style="height:300px; width:550px; margin:25px;">
+ </li>
+
+	</ul>
+</div>
+
+
+
+
+
+
+</body>
+</html>
