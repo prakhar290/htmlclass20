@@ -1,2 +1,2 @@
 # htmlclass20
-my first class in kiet by ankit verma sir
+learning html from basic to a moderate level by creating code and by practicing it
