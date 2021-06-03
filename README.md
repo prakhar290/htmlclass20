@@ -1,2 +1,2 @@
-# htmlclass20
-learning html from basic to a moderate level by creating code and by practicing it
+# HTML CSS and Javascript
+*includes very basic codes of **HTML, CSS** and **Javascript** which are mostl commonly used.*
